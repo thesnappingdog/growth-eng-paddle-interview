@@ -1,0 +1,29 @@
+{
+  "name": "growth-engineer-interview-pack",
+  "dependencies": {
+    "@types/lodash": "^4.14.166",
+    "@types/superagent": "^4.1.10",
+    "@types/urijs": "^1.19.14",
+    "@types/uuid": "^8.3.0",
+    "dotenv": "^8.2.0",
+    "jsonata": "^1.8.4",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "superagent": "^6.1.0",
+    "urijs": "^1.19.2",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "compute-ts": "NODE_ENV=development nodemon --watch '**/**/*' -e ts,tsx --exec ts-node ./ts/compute.ts",
+    "compute-js": "NODE_ENV=development nodemon --watch '**/**/*' -e ts,tsx --exec ts-node ./js/compute.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}

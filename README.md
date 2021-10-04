@@ -1,8 +1,10 @@
 # Growth Engineer @ Paddle Technical Assignment
 
-We currently use a customer data platform (CDP) called Hull.io at Paddle. This tool allows us to connect commercial tools like Salesforce, HubSpot to a central unit, compute properties by using virtual javascript environments (hull processor), sync data to tools, programmatically stitch together user and account profiles (identity resolution).
+During the interview, please be prepared to show and run the program.
 
-The core piece of Growth Engineering (and Hull for that matter) are called processors. They allow us to write custom business logic, and use data from sources that we purchase or scrape, without having to export/import or for it to live inside of another tool.
+We currently use a customer data platform (CDP) called Hull.io at Paddle. This tool allows us to connect commercial tools like Salesforce and HubSpot to a centralised unit, compute properties by using virtual javascript environments (hull processor), sync data to tools, programmatically stitch together user and account profiles (identity resolution).
+
+The core piece of Growth Engineering (and Hull) are called processors. They allow us to write custom business logic, and use data from sources that we purchase or scrape, without having to export/import or for it to live inside of another tool.
 
 Think of Processors as one off scripts that receive a data payload, and are able to update attributes in the database.
 
@@ -12,11 +14,13 @@ It's purpose is to listen to changes in account data, and then evaluate whether 
 
 The 'engine' so to speak is the class Compute. It takes in a strategy (set of instructions), and decides whether an update is needed, and if so, what the new attribute should be.
 
-At the beginning we define a list of these strategies. Each strategy is looped through Compute, and if needed, the outputted attribute is added to a the attributes object.
+At the beginning we define a list of these strategies. Each strategy is looped through Compute, and if needed, the outputted attribute is added to the attributes object.
 
 These will be the attributes that are updated.
 
 You have been asked to add a couple of additional computations to the engine.
+
+Feel free to use either TypeScript or JavaScript versions.
 
 # Assignment
 
