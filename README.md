@@ -50,6 +50,11 @@ Bonus: Add new features to Compute if something becomes repetetive.
 - compute_template: string => decides how the strategy is routed inside of Compute
 - custom_method?: function + returns any value including objects => write your own custom function if no sutiable method present
 
+# Requirements
+
+- NodeJS https://nodejs.org/en/
+- TypeScript (Optional) https://www.typescriptlang.org/download
+
 # Setup
 
 - git clone or download this repository
